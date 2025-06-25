@@ -1,0 +1,90 @@
+
+/* Fonts */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f6f2;
+    color: #2c2c2c;
+  }
+  
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #111;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: gold;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    background-color: #222;
+    color: gold;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #fafafa;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #111;
+    color: #999;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    th, td {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: gold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+.login-btn {
+    background: gold;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* Cart Section */
+.cart {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cart h2 {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 15px auto;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+.cart-item h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.cart-item p {
+    font-size: 16px;
+    color: gold;
+}
+
+.cart-item button {
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.cart-item button:hover {
+    background: darkred;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+/* back button */
+#back-btn {
+    padding: 12px 20px;
+    background: gold;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#back:hover {
+    background: #ffcc00;
+}
+/* Checkout Button */
+#checkout-btn {
+    padding: 12px 20px;
+    background: gold;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#checkout-btn:hover {
+    background: #ffcc00;
+}

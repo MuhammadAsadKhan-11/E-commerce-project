@@ -1,0 +1,222 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+/* HEADER (Navigation Bar) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 215, 0, 0.2);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .active {
+    background: gold;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Login Button */
+.btn-login {
+    background: gold;
+    color: black !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: white;
+    color: black !important;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+    font-size: 24px;
+    color: gold;
+    cursor: pointer;
+    display: none;
+}
+
+/* MEMBERSHIP PAGE */
+.membership-page {
+    padding: 120px 20px 50px; /* Added top padding to prevent overlap with navbar */
+}
+
+.membership-container h2 {
+    font-size: 32px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.membership-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* MEMBERSHIP PLANS */
+.membership-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plan {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    font-size: 22px;
+    color: gold;
+}
+
+.plan p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.plan strong {
+    font-size: 24px;
+}
+
+/* Buttons */
+.btn-apply, .btn-verify {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-apply:hover, .btn-verify:hover {
+    background: white;
+    color: black;
+}
+
+/* VERIFICATION SECTION */
+.verification-container {
+    background: rgba(255, 215, 0, 0.2);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verification-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(255, 215, 0, 0.2);
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 -4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .membership-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+    }
+}

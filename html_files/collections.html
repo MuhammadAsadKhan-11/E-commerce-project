@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Collections</title>
+    <link rel="stylesheet" href="/css files/collection.css">
+    <script src="/js_files/collection.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Luxury Lifestyle</div>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links">
+            <a href="/html_files/home.html">Home</a>
+            <a href="/html_files/collections.html">Collections</a>
+            <!-- <a href="/html_files/cart.html">🛒Cart(0)</a> -->
+            <a href="/html_files/cart.html" id="cart-button">
+                🛒 Cart <span id="cart-count">0</span></a>
+                <button class="login-button"><a href="/html_files/login.html">Login</a></button>
+            </div>
+        </nav>
+
+    <!-- Header - Luxury Collections -->
+    <h1 class="header"> Welcome to Elite Luxe Collections</h1>
+
+    <!-- <div class="collections">
+        <div class="collection slide-in">
+            <h2>Watches</h2>
+            <br><br>
+            <div class="items">
+                <div class="item">
+                    <img src="/images/watches/w1.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam obcaecati incidunt sint
+                        asperiores, doloribus fugiat soluta enim velit ipsam aspernatur!</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/w2.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni reprehenderit totam sint
+                        vel minima? Quam cum velit similique sit!</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/w3.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi sint animi?
+                        Praesentium laudantium ullam iste adipisci fuga temporibus vel?</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/wr1.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum hic at non doloribus
+                        necessitatibus iste a aspernatur ipsa impedit vitae!</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/hand_watch.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo excepturi, quaerat aspernatur
+                        culpa non quibusdam soluta aperiam sequi nostrum provident.</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/w4.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus dolore fugiat
+                        recusandae totam reiciendis non maiores, eveniet quisquam ipsum?</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/watch.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iste excepturi non id inventore
+                        aliquam illo sequi maiores optio recusandae?</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/w5.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, dicta maiores sunt fugiat
+                        architecto velit voluptatem quis culpa nemo. Cupiditate.</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/wr2.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquam mollitia corrupti
+                        perspiciatis sequi pariatur corporis! Iste molestias veniam voluptatibus!</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/watches/white diamond.jpg" alt="Luxury Watch">
+                    <h3>Luxury Watch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iste esse repudiandae adipisci
+                        consequuntur minus incidunt tenetur impedit suscipit non.</p>
+                    <p>$5000</p>
+                    <button onclick="buyItem('Luxury Watch', 5000, 'Watches')">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection slide-in">
+            <h2>Bags</h2>
+            <br><br>
+            <div class="items">
+                <div class="item">
+                    <img src="/images/bags/b1.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur ad eaque!
+                        Reprehenderit eaque necessitatibus expedita corrupti iusto. Aperiam, eveniet.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b2.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat magnam maiores saepe
+                        laboriosam commodi fugit ratione ducimus harum minus?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b3.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam nemo sit vero recusandae
+                        voluptatem vel et, voluptatibus nulla pariatur.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b4.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum amet error maxime
+                        consequuntur. Assumenda officiis praesentium perspiciatis in veniam.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b5.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id odio perferendis dolor
+                        voluptatem. Sapiente hic incidunt sed earum tempora.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b6.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum minus debitis quaerat similique
+                        vitae maiores perspiciatis labore quos? Nesciunt, blanditiis?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b7.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias error nihil ratione
+                        fugiat sit soluta, inventore eligendi omnis. Molestiae!</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b8.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident perspiciatis
+                        quidem maxime veniam aperiam rerum excepturi nam, at vitae.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b9.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestiae fuga obcaecati soluta
+                        velit facere excepturi laudantium accusamus unde quod!</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images/bags/b10.jpg" alt="luxury bag">
+                    <h3>Luxury bag</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aperiam rerum aliquam cupiditate,
+                        cum nam quam nostrum eveniet eum vitae.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('luxury bags', 1200, 'bags')">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="collection slide-in">
+            <h2>Shoes</h2>
+            <br><br>
+            <div class="items">
+                <div class="item">
+                    <img src="/images//shoes/s1.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias hic debitis qui quisquam nemo,
+                        illo doloribus voluptate cum voluptates tempora.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s2.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem laudantium voluptas non
+                        provident beatae iure porro ipsa voluptates! Eos, exercitationem?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s3.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sunt dolorum. Dicta sint laudantium
+                        expedita aperiam blanditiis distinctio saepe nostrum?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s4.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, labore corporis totam praesentium
+                        inventore reprehenderit quidem enim fugit accusamus eaque.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s5.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem vel expedita iste modi
+                        similique tempore provident soluta aut sit?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s6.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quaerat hic recusandae ut, id omnis
+                        dolores vero fugiat velit ab.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s7.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugiat expedita culpa
+                        recusandae laudantium quisquam natus consequuntur placeat illo cum.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s8.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum itaque officiis officia
+                        sapiente aut numquam ipsa assumenda libero sed?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s9.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio consequatur ullam blanditiis
+                        tenetur, error repellat iusto cum fuga est aperiam.</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+                <div class="item">
+                    <img src="/images//shoes/s10.jpg" alt="Luxury Shoes">
+                    <h3>Luxury Shoes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum illum quaerat quod molestiae,
+                        repudiandae neque iste deleniti fuga cumque. Expedita?</p>
+                    <p>$1200</p>
+                    <button onclick="buyItem('Luxury Shoes', 1200, 'Shoes')">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection slide-in">
+            <h2>Jewelry</h2>
+            <br><br>
+            <div class="items">
+                <div class="item">
+                    <img src="/images/rings/r1.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury red diamond Ring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur vitae beatae deserunt
+                        consequatur ipsa, doloremque delectus. Doloremque, perspiciatis veniam.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r2.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury red diamond Ring</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non id, voluptates cum nesciunt facilis
+                        fuga minus pariatur sequi maxime et.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r3.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury Necklace</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui, fugiat perferendis hic
+                        repellat alias ea odio. Esse, consectetur doloremque.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r4.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury Necklace</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis assumenda quos voluptate rem
+                        vel expedita! Praesentium impedit ratione magni id?</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r5.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury Necklace</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates iure voluptatem autem
+                        accusamus odit mollitia. Qui minus illo velit?</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r6.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury diamond Ring</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laboriosam tempora autem eum
+                        eligendi minima consequatur doloremque ut deleniti deserunt.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r7.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury diamong Ring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis esse velit enim ad
+                        nobis exercitationem quod sunt beatae quam.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r8.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury gold Ring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore beatae fugiat voluptate eos
+                        perspiciatis rem ullam saepe debitis quisquam accusamus?</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/ring.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury blue diamong Ring</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sequi magnam nemo accusantium
+                        quod, eaque adipisci quis cumque dolorem quos?</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+
+                <div class="item">
+                    <img src="/images/rings/r10.jpg" alt="Luxury Jewelry">
+                    <h3>Luxury diamong Ring</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perspiciatis, deleniti corporis,
+                        nisi labore saepe esse, modi libero enim veniam fugit provident amet nulla error ut. Eaque
+                        reiciendis fuga tempora.</p>
+                    <p>$2500</p>
+                    <button onclick="buyItem('Luxury Necklace', 2500, 'Jewelry')">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="collections"></div>
+
+
+
+    <script type="module" src="../js_files/collection.js"></script>
+    <script type="module">
+        import { updateCartCount } from '../js_files/cart_count.js';
+        updateCartCount();
+      </script>
+      
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Elite Luxe</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/css files/signup_and_login.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">Elite Luxe</div>
+      <button class="hamburger">&#9776;</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/html_files/home.html">Home</a></li>
+          <!-- <li><a href="/html files/membership.html">Membership</a></li> -->
+
+          <a href="/html_files/collections.html">Collections</a>
+          <li>
+            <a href="/html_files/cart.html" class="active"
+              >🛒 Cart (<span id="cart-count">0</span>)</a
+            >
+          </li>
+          <li><a href="/html_files/login.html" class="btn-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section class="login-container">
+      <h2>Login to Your Account</h2>
+      <form id="login_form">
+        <input type="email" placeholder="Email" required name="email"/>
+        <!-- <input type="text" placeholder="Membership Code" required> -->
+        <input type="password" placeholder="Password" required name="password"/>
+        <button type="submit" class="btn">Login</button>
+        <p class="error-message" id="login-error-msg"></p>
+        <p id="Sign">
+          Don't have an account? <a href="signup.html">Signup here</a>
+        </p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Elite Luxe | The Ultimate Luxury Shopping Experience</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+
+<script type="module" src="../js_files/login.js"></script>
+  </body>
+</html>

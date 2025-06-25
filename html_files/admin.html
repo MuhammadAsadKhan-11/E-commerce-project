@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Admin Portal</title>
+  <link rel="stylesheet" href="/css files/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="admin-container">
+    <header>
+      <h1>🛍️ Luxury Admin Portal</h1>
+      <p class="subtitle">User Logins & Purchases Overview</p>
+    </header>
+
+    <main>
+      <!-- <div class="table-wrapper">
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Login Time</th>
+              <th>Purchases</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+      </div> -->
+      <div id="admin-users" class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <!-- <th>Login Time</th> -->
+              <th>Purchases</th>
+            </tr>
+          </thead>
+          <tbody id="user-data"></tbody>
+        </table>
+      </div>
+      
+    </main>
+
+    <footer>
+      <p>© 2025 LuxeShop Admin Dashboard</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="../js_files/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Cart</title>
+    <link rel="stylesheet" href="/css files/cart.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Luxury Lifestyle</div>
+        <ul class="nav-links">
+            <li><a href="/html_files/home.html">Home</a></li>
+            <li><a href="/html_files/collections.html">Collections</a></li>
+            <li><a href="/html_files/cart.html" class="active">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+            <li><a href="/html_files/login.html" class="login-btn">Login</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Luxury Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-list"></div>
+        <!-- <h3>Total: $<span id="total-price">0</span></h3> -->
+        <div id="cart-total"></div>
+
+        <button id="back-btn"><a href="/html_files/collections.html">Back</a></button>
+        <!-- <button id="checkout-btn">Proceed to Checkout</button> -->
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <p id="checkout-msg"></p>
+        
+    </section>
+
+    <script type="module" src="/js_files/cart.js"></script>
+    <!-- <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartContainer = document.getElementById("cart-items");
+            let totalPrice = 0;
+
+            cartContainer.innerHTML = ""; // Clear previous content
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = "<p class='empty-cart'>Your cart is empty.</p>";
+            } else {
+                cart.forEach((item, index) => {
+                    totalPrice += item.price;
+
+                    cartContainer.innerHTML += `
+                        <div class="cart-item">
+                            <h3>${item.name}</h3>
+                            <p>Category: ${item.category}</p>
+                            <p>Price: $${item.price}</p>
+                            <button onclick="removeItem(${index})">Remove</button>
+                        </div>
+                    `;
+                });
+            }
+
+            document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+            document.getElementById("cart-count").innerText = cart.length;
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            loadCart(); // Reload cart items
+        }
+
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+
+        document.addEventListener("DOMContentLoaded", loadCart);
+    </script> -->
+
+   
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Membership - Elite Luxe</title>
+  
+    <link rel="stylesheet" href="/css files/membership.css">
+    <script src="/js_files/membership.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Elite Luxe</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/html_files/home.html">Home</a></li>
+                <li><a href="/html_files/membership.html" class="active">Membership</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Membership Section -->
+    <section class="membership-page">
+        <div class="membership-container">
+            <h2>Become a Luxury Member</h2>
+            <p>Enjoy exclusive benefits and premium offers.</p>
+
+            <!-- Membership Plans -->
+            <div class="membership-plans">
+                <div class="plan">
+                    <h3>1 Month</h3>
+                    <p>Exclusive access for one month</p>
+                    <p><strong>$99</strong></p>
+                    <button class="btn-apply" onclick="applyMembership('1 Month')">Apply Now</button>
+                </div>
+
+                <div class="plan">
+                    <h3>4 Months</h3>
+                    <p>Premium access for four months</p>
+                    <p><strong>$349</strong></p>
+                    <button class="btn-apply" onclick="applyMembership('4 Months')">Apply Now</button>
+                </div>
+
+                <div class="plan">
+                    <h3>6 Months</h3>
+                    <p>Full luxury access for six months</p>
+                    <p><strong>$499</strong></p>
+                    <button class="btn-apply" onclick="applyMembership('6 Months')">Apply Now</button>
+                </div>
+            </div>
+
+            <!-- Verification Section -->
+            <div class="verification-container" id="verification-container">
+                <h3>Enter Verification Code</h3>
+                <input type="text" id="verification-code" placeholder="Enter Code">
+                <button class="btn-verify" onclick="verifyCode()">Verify</button>
+                <p id="verification-status"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Elite Luxe | The Ultimate Luxury Shopping Experience</p>
+    </footer>
+
+    
+
+</body>
+</html>
